@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 export EDITOR='subl -w'
 export BUNDLER_EDITOR='subl -w'
 
