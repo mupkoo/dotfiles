@@ -36,4 +36,5 @@ Session.vim
 *.sublime-project
 .idea
 .pow*
+.ruby-*
 .env
