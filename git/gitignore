@@ -41,3 +41,6 @@ Session.vim
 .pow*
 .ruby-*
 .env
+.vscodeignore
+ember.d.ts
+jsconfig.json
