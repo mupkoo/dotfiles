@@ -17,8 +17,11 @@ Desktop.ini
 # Tags      taken from: https://github.com/github/gitignore/blob/master/Global/Tags.gitignore
 # ----------------------------------------------------------------------------------------------
 TAGS
+.TAGS
+!TAGS/
 tags
 .tags
+!tags/
 
 # Vim       taken from: https://github.com/github/gitignore/blob/master/Global/vim.gitignore
 # ----------------------------------------------------------------------------------------------
