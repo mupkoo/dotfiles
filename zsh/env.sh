@@ -23,3 +23,5 @@ function start {
         echo "The folder does not have Procdev or package.json files"
     fi
 }
+
+alias bs="brew services"
