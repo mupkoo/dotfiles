@@ -203,7 +203,7 @@ build_prompt() {
 
 # rbenv and node settings
 if which rbenv &> /dev/null; then
-  RPS1='%{$fg[blue]%}[`rbenv version | sed -e "s/ (set.*$//"`][`node --version`]%{$reset_color%} $EPS1'
+  RPS1='%{$fg[red]%}[`rbenv version | sed -e "s/ (set.*$//"`]%{$fg[yellow]%}[`node --version | sed "s/v//"`]%{$reset_color%} $EPS1'
 else
   RPS1=' $EPS1'
 fi
