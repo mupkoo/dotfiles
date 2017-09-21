@@ -5,6 +5,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export LANG=en_US.UTF-8
 export EDITOR='subl -w'
 export BUNDLER_EDITOR='subl'
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 function start {
     if [ -f "Procdev" ] ; then
