@@ -41,6 +41,7 @@ Session.vim
 .pow*
 .ruby-*
 .env
+Procmine
 .vscodeignore
 ember.d.ts
 jsconfig.json
