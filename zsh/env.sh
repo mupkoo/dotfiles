@@ -34,5 +34,5 @@ function republish_tag {
 }
 
 alias bs="brew services"
-alias ee="ember exam --split=4 --parallel"
+alias ee="ember exam --split=4 --parallel -r dot"
 alias gpfp="git pull && git fetch -p"
