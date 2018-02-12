@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 export LANG=en_US.UTF-8
 export EDITOR='subl -w'
