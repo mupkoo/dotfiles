@@ -7,4 +7,4 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}●"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # rbenv and node settings
-RPS1='%{$fg[red]%}[`rbenv version | sed -e "s/ (set.*$//"`]%{$reset_color%}%{$fg[yellow]%}[`node --version | sed "s/v//"`]%{$reset_color%}%{$fg[magenta]%}[`elixir --version | tail -n 1 | sed "s/Elixir //"`]%{$reset_color%} $EPS1'
+RPS1='%{$fg[red]%}[`rbenv version | sed -e "s/ (set.*$//"`]%{$reset_color%}%{$fg[yellow]%}[`node --version | sed "s/v//"`]%{$reset_color%}%{$fg[magenta]%}[`elixir --version | tail -n 1 | sed "s/Elixir //" | sed "s/ (.*$//"`]%{$reset_color%} $EPS1'
