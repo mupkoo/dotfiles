@@ -34,6 +34,10 @@ function republish_tag {
   git push --tags
 }
 
+function kill_port {
+  lsof -t -i:$1 | xargs kill -9
+}
+
 alias bs="brew services"
 alias ee="ember exam --split=4 --parallel -r dot"
 alias gpfp="git pull && git fetch -p"
