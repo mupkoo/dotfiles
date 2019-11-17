@@ -4,8 +4,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 export LANG=en_US.UTF-8
-export EDITOR='subl -w'
-export BUNDLER_EDITOR='subl'
+export EDITOR='code -w'
+export BUNDLER_EDITOR='code'
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 function start {
