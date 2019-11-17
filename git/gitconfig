@@ -101,8 +101,8 @@
   prompt = false
   keepBackup = true
 [mergetool "mvimdiff"]
-  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
-  keepbackup=false
+  cmd = mvim -c 'Gdiff' $MERGED
+  keepbackup = false
 [merge]
   summary = true
   verbosity = 1
@@ -119,6 +119,7 @@
   autocrlf = false
   editor = vim
   excludesfile = ~/.dotfiles/git/gitignore
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [advice]
   statusHints = false
 [diff]
@@ -133,6 +134,8 @@
 [include]
   path = .gitconfig.user
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
   required = true
+  process = git-lfs filter-process
+[pull]

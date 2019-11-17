@@ -44,6 +44,7 @@ Session.vim
 .idea
 .pow*
 .ruby-*
+.byebug_history
 .env
 .envrc
 Procmine
