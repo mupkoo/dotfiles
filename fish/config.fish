@@ -11,6 +11,7 @@ set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 starship init fish | source
 source /usr/local/opt/asdf/asdf.fish
 eval (direnv hook fish)
+status --is-interactive; and source (jump shell fish | psub)
 
 # Aliases
 alias g="git"
