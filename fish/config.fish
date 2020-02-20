@@ -1,11 +1,20 @@
+# Theme
+set fish_greeting ""
+set -g fish_emoji_width 2
+set -g fish_color_command 77aaff --bold
+set -g fish_color_param 6bdfff
+set -g fish_color_param bdc7d6
+set -g fish_color_quote b9ea81
+set -g fish_color_operator d18ef0
+set -g fish_color_error ff4248
+
 # Variables
-set fish_greeting ''
-set -x DEFAULT_USER mirko
-set -x LANG en_US.UTF-8
-set -x EDITOR 'code -w'
-set -x BUNDLER_EDITOR 'code -w'
-set -x ERL_AFLAGS "-kernel shell_history enabled"
-set -x HOMEBREW_NO_INSTALL_CLEANUP 1
+set -g DEFAULT_USER mirko
+set -g LANG en_US.UTF-8
+set -g EDITOR "code -w"
+set -g BUNDLER_EDITOR "code -w"
+set -g ERL_AFLAGS "-kernel shell_history enabled"
+set -g HOMEBREW_NO_INSTALL_CLEANUP 1
 
 # Setup hook
 starship init fish | source
