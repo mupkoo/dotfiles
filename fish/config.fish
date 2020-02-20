@@ -11,6 +11,7 @@ set -g fish_color_error ff4248
 # Variables
 set -g DEFAULT_USER mirko
 set -g LANG en_US.UTF-8
+set -g LC_ALL en_US.UTF-8
 set -g EDITOR "code -w"
 set -g BUNDLER_EDITOR "code -w"
 set -g ERL_AFLAGS "-kernel shell_history enabled"
