@@ -9,13 +9,13 @@ set -g fish_color_operator d18ef0
 set -g fish_color_error ff4248
 
 # Variables
-set -g DEFAULT_USER mirko
-set -g LANG en_US.UTF-8
-set -g LC_ALL en_US.UTF-8
-set -g EDITOR "code -w"
-set -g BUNDLER_EDITOR "code -w"
-set -g ERL_AFLAGS "-kernel shell_history enabled"
-set -g HOMEBREW_NO_INSTALL_CLEANUP 1
+set -x DEFAULT_USER mirko
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+set -x EDITOR "code -w"
+set -x BUNDLER_EDITOR "code -w"
+set -x ERL_AFLAGS "-kernel shell_history enabled"
+set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 
 # Setup hook
 starship init fish | source
