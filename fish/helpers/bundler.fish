@@ -1,9 +1,10 @@
 set -l bundler_executables \
   guard \
+  rails \
   rake \
   rspec \
   rubocop \
-  rails
+  spring
 
 for executable in $bundler_executables
   function $executable --inherit-variable executable
