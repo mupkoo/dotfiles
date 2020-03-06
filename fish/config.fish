@@ -31,3 +31,4 @@ alias gpfp="git pull && git fetch -p"
 
 # Helpers
 source ~/.dotfiles/fish/helpers/bundler.fish
+source ~/.dotfiles/fish/helpers/kill_port.fish
