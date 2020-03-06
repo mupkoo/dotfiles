@@ -5,8 +5,10 @@ set -g fish_color_command 77aaff --bold
 set -g fish_color_param 6bdfff
 set -g fish_color_param bdc7d6
 set -g fish_color_quote b9ea81
-set -g fish_color_operator d18ef0
+set -g fish_color_operator 703faf --bold
 set -g fish_color_error ff4248
+set -g fish_color_autosuggestion 68709b
+set -g fish_color_end 16b37d
 
 # Variables
 set -x DEFAULT_USER mirko
@@ -21,7 +23,7 @@ set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 starship init fish | source
 source /usr/local/opt/asdf/asdf.fish
 eval (direnv hook fish)
-status --is-interactive; and source (jump shell fish  --bind=d| psub)
+status --is-interactive; and source (jump shell fish --bind=d | psub)
 
 # Aliases
 alias g="git"
