@@ -50,5 +50,6 @@ Session.vim
 Procmine
 .vscodeignore
 .vscode
+.nova
 ember.d.ts
 jsconfig.json
