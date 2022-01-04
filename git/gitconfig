@@ -1,7 +1,7 @@
 # taken from: https://github.com/skwp/dotfiles/blob/master/git/gitconfig
 [user]
-  name = Mirko Akov
-  email = mupkoo@gmail.com
+	name = Mirko Akov
+	email = mupkoo@gmail.com
 [color]
   ui = true
 [color "branch"]
@@ -142,4 +142,4 @@
 [pull]
 	rebase = true
 [init]
-	defaultBranch = master
+	defaultBranch = main
