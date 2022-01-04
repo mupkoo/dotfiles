@@ -18,6 +18,7 @@ set -x EDITOR "code -w"
 set -x BUNDLER_EDITOR "code -w"
 set -x ERL_AFLAGS "-kernel shell_history enabled"
 set -x HOMEBREW_NO_INSTALL_CLEANUP 1
+set -x HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK 1
 
 # Setup hook
 starship init fish | source
