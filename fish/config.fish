@@ -22,7 +22,8 @@ set -x HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK 1
 
 # Setup hook
 starship init fish | source
-source /usr/local/opt/asdf/asdf.fish
+# source /usr/local/opt/asdf/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
 eval (direnv hook fish)
 status --is-interactive; and source (jump shell fish --bind=d | psub)
 
