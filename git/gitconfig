@@ -1,7 +1,7 @@
 # taken from: https://github.com/skwp/dotfiles/blob/master/git/gitconfig
 [user]
 	name = Mirko Akov
-	email = mupkoo@gmail.com
+	email = mirko@akov.dev
 [color]
   ui = true
 [color "branch"]
