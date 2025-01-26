@@ -21,7 +21,10 @@ set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 set -x HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK 1
 
 # Setup hook
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if test -f /opt/homebrew/bin/brew
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+end
+
 starship init fish | source
 # source /usr/local/opt/asdf/asdf.fish
 # source /opt/homebrew/opt/asdf/libexec/asdf.fish
