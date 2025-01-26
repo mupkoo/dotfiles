@@ -36,6 +36,7 @@ Session.vim
 # Elixir
 # ----------------------------------------------------------------------------------------------
 .elixir_ls
+.lexical
 
 # Project specific
 # ----------------------------------------------------------------------------------------------
@@ -50,6 +51,8 @@ Session.vim
 Procmine
 .vscodeignore
 .vscode
+.zed
 .nova
 ember.d.ts
 jsconfig.json
+.mise.local.toml

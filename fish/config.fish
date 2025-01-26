@@ -21,16 +21,26 @@ set -x HOMEBREW_NO_INSTALL_CLEANUP 1
 set -x HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK 1
 
 # Setup hook
+eval "$(/opt/homebrew/bin/brew shellenv)"
 starship init fish | source
 # source /usr/local/opt/asdf/asdf.fish
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-eval (direnv hook fish)
+# source /opt/homebrew/opt/asdf/libexec/asdf.fish
+# eval (direnv hook fish)
+# fish_add_path ~/.local/share/mise/shims
+
+if status is-interactive
+  mise activate fish | source
+else
+  mise activate fish --shims | source
+end
+
 status --is-interactive; and source (jump shell fish --bind=d | psub)
 
 # Aliases
 alias g="git"
 alias bs="brew services"
 alias ee="ember exam --split=4 --parallel -r dot"
+alias gp="git pull"
 alias gpfp="git pull && git fetch -p"
 
 # Helpers

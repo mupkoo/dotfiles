@@ -8,7 +8,9 @@ set -l bundler_executables \
 
 for executable in $bundler_executables
   function $executable --inherit-variable executable
-    if test -e Gemfile
+    if test -e bin/$executable
+      command bin/$executable $argv
+    else if test -e Gemfile
       command bundle exec $executable $argv
     else
       command $executable $argv
